@@ -1,0 +1,45 @@
+{
+  "name": "reactive-db",
+  "version": "1.0.0",
+  "description": "reactive-db is an in memory reactive database with a MongoDB like query syntax.",
+  "main": "index.js",
+  "repository": "https://github.com/renebigot/node-reactive-db.git",
+  "author": "Rene BIGOT",
+  "license": "MIT",
+  "scripts": {
+    "test": "NODE_ENV=test nyc --reporter=lcov --reporter=html --reporter=text mocha tests/*",
+    "autotest-cov": "NODE_ENV=test supervisor -i ./coverage -w ./lib,./tests, -q -n exit -x nyc -- --reporter=lcov --reporter=html --reporter=text mocha tests/*"
+  },
+  "nyc": {
+    "require": [
+      "@babel/register"
+    ],
+    "reporter": [
+      "lcov",
+      "html",
+      "text"
+    ],
+    "sourceMap": false,
+    "instrument": false
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.8",
+    "@babel/preset-env": "^7.12.7",
+    "@babel/register": "^7.12.1",
+    "assert": "^2.0.0",
+    "babel-plugin-istanbul": "^6.0.0",
+    "eslint": "^7.15.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^5.0.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^8.2.1",
+    "nyc": "^15.1.0",
+    "supervisor": "^0.12.0"
+  },
+  "dependencies": {
+    "modifyjs": "^0.3.1"
+  }
+}
