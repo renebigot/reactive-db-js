@@ -1,9 +1,9 @@
 {
-  "name": "reactive-db",
-  "version": "1.0.0",
-  "description": "reactive-db is an in memory reactive database with a MongoDB like query syntax.",
+  "name": "reactive-db-js",
+  "version": "1.0.1",
+  "description": "reactive-db-js is an in memory reactive database with a MongoDB like query syntax.",
   "main": "index.js",
-  "repository": "https://github.com/renebigot/node-reactive-db.git",
+  "repository": "https://github.com/renebigot/reactive-db-js.git",
   "author": "Rene BIGOT",
   "license": "MIT",
   "scripts": {
