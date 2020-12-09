@@ -10,6 +10,19 @@
     "test": "NODE_ENV=test nyc --reporter=lcov --reporter=html --reporter=text mocha tests/*",
     "autotest-cov": "NODE_ENV=test supervisor -i ./coverage -w ./lib,./tests, -q -n exit -x nyc -- --reporter=lcov --reporter=html --reporter=text mocha tests/*"
   },
+  "keywords": [
+    "db",
+    "database",
+    "offline-first",
+    "nosql",
+    "no-sql",
+    "pwa",
+    "live-query",
+    "reactive",
+    "realtime",
+    "mongodb",
+    "memory"
+  ],
   "nyc": {
     "require": [
       "@babel/register"
