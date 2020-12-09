@@ -1,6 +1,6 @@
-# reactive-db
+# reactive-db-js
 
-**reactive-db** is an in memory documents oriented reactive NoSQL database with MongoDB syntax (not full support). No external software needed !
+**reactive-db-js** is an in memory documents oriented reactive NoSQL database with MongoDB syntax (not full support). No external software needed !
 
 What all these words means :
 
@@ -13,18 +13,18 @@ What all these words means :
 
 ## Limitations
 
-**reactive-db** is not performance optimised. It's goal is to provide an easy way to store and query with a notification mecanism. It may be slow with lots of datas stored. However, you can store any amout of data as long as there's enough free memory in the host system.
+**reactive-db-js** is not performance optimised. It's goal is to provide an easy way to store and query with a notification mecanism. It may be slow with lots of datas stored. However, you can store any amout of data as long as there's enough free memory in the host system.
 
 ## Installation
 
 ```bash
-yarn add reactive-db
+yarn add reactive-db-js
 ```
 
 or
 
 ```bash
-npm install reactive-db
+npm install reactive-db-js
 ```
 
 ## Usage
@@ -34,7 +34,7 @@ npm install reactive-db
 A database contains many collections. They are instanciated with `new ReactiveDatabase()`.
 
 ```javascript
-const ReactiveDatabase = require('reactive-db')
+const ReactiveDatabase = require('reactive-db-js')
 const db = new ReactiveDatabase()
 ```
 
@@ -253,7 +253,7 @@ collection.find()
 ```
 ### Query operators
 
-`reactive-db` support some of MongoDB query operators, incluing :
+`reactive-db-js` support some of MongoDB query operators, incluing :
 
 
 * `$eq`: Matches values that are equal to a specified value.
